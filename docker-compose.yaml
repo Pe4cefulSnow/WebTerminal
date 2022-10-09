@@ -1,0 +1,14 @@
+version: "2"
+services:
+  web:
+    image: php:7.4-nginx
+    volumes:
+      - ./index.html:/var/www/html/index.html
+      - ./css/:/var/www/html//css/
+      - ./font/:/var/www/html/font/
+      - ./js/:/var/www/html/js/
+      - ./server/:/var/www/html/server/
+    ports:
+      - 80
+
+
